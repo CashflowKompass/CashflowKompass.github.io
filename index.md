@@ -1,7 +1,6 @@
 ---
 layout: home
 amp-youtube: true
-title: FiNANZCAFÉ
 ---
 
 <amp-youtube data-videoid="ysO5Sz_lTso" layout="responsive" width="480" height="270" >
