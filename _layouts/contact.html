@@ -1,0 +1,146 @@
+---
+layout: default
+---
+
+<div class="center">
+
+  <!-- Start Fullpage Hero -->
+  <figure class="ampstart-image-fullpage-hero m0 relative mb4">
+    <amp-img width="712" height="727" alt="Logo" layout="responsive" src="{{ 'assets/img/Logo.png' | relative_url }}"
+             media="(max-width: 415px)"></amp-img>
+    <amp-img height="727" alt="Logo" layout="fixed-height" src="{{ 'assets/img/Logo.png' | relative_url }}"
+             media="(min-width: 416px)"></amp-img>
+    <figcaption class="absolute top-0 right-0 bottom-0 left-0 m-auto home-caption">
+      <header class="p3">
+        <h1 class="ampstart-fullpage-hero-heading mb3">
+          <span class="ampstart-fullpage-hero-heading-text">
+            ERREICHE DEINE FINANZIELLE
+            <br>
+            FREIHEIT MIT EINEM
+            <br>
+            WISSENSCHAFTLICHEN KONZEPT
+          </span>
+        </h1>
+      </header>
+    </figcaption>
+  </figure>
+  <!-- End Fullpage Hero -->
+</div>
+
+<main id="content" role="main">
+  <section class="post-content m3">
+    {{ content }}
+
+
+    <form method="post"
+          action-xhr={{ site.static_email }}
+          custom-validation-reporting="show-all-on-submit"
+          target="_blank">
+      <fieldset>
+        <label>
+          <span>Name:</span>
+          <input type="text"
+                 name="name"
+                 required>
+        </label>
+        <br>
+        <label>
+          <span>Alter:</span>
+          <input type="number"
+                 name="age"
+                 required>
+        </label>
+        <br>
+        <label>
+          <span>Beruf:</span>
+          <input type="text"
+                 name="job">
+        </label>
+        <br>
+        <label>
+          <span>Telefonnummer:</span>
+          <input type="tel"
+                 name="tel">
+        </label>
+        <br>
+        <label>
+          <span>Email:</span>
+          <input type="email"
+                 name="email"
+                 required>
+        </label>
+        <br>
+        <label>
+          <span>Wie heißt du auf Instagram?</span>
+          <input type="text"
+                 name="instagram">
+        </label>
+        <br>
+        <label>
+          <span>Wie bist du auf uns aufmerksam geworden?</span>
+          <textarea class="col-12"
+                    rows="5"
+                    name="lead"
+          ></textarea>
+        </label>
+        <br>
+
+        <label>
+          <span>Wie definierst du persönlich finanziellen Erfolg am ehesten?</span>
+          <select name="successDefinition">
+            <option value="Ich möchte reisen wann ich will und so viel ich will">Ich möchte reisen wann ich will und so
+              viel ich will
+            </option>
+            <option value="Ich möchte finanzielle Sicherheit, um meiner Familie etwas bieten zu können">Ich möchte
+              finanzielle Sicherheit, um meiner Familie etwas bieten zu können
+            </option>
+            <option value="Ich möchte von den Zinsen meines Geldes leben können">Ich möchte von den Zinsen meines Geldes
+              leben können
+            </option>
+            <option value="Ich möchte viel Geld besitzen und mir Luxus gönnen können">Ich möchte viel Geld besitzen und
+              mir Luxus gönnen können
+            </option>
+          </select>
+        </label>
+        <br>
+
+        <label>
+          <span>Was ist dein persönliches Ziel?</span>
+          <select name="goal">
+            <option value="Über Finanzen informieren">Über Finanzen informieren</option>
+            <option value="Meine aktuellen Finanzen prüfen lassen">Meine aktuellen Finanzen prüfen lassen</option>
+            <option value="Mein persönlichen finanziellen Erfolg realisieren">Mein persönlichen finanziellen Erfolg
+              realisieren
+            </option>
+          </select>
+        </label>
+        <br>
+        <label>
+          <span>Welches finanzielle Themengebiet interessiert dich am meisten?</span>
+          <select name="interest">
+            <option value="Investments">Investments</option>
+            <option value="Immobilien">Immobilien</option>
+            <option value="Versicherungen">Versicherungen</option>
+            <option value="Finanzen als selbständiger">Finanzen als selbständiger</option>
+            <option value="Aktien, ETFs, Fonds">Aktien, ETFs, Fonds</option>
+            <option value="Absicherung? Was brauche ich wirklich?">Absicherung? Was brauche ich wirklich?</option>
+            <option value="Business (Aufbau, Marketing)">Business (Aufbau, Marketing)</option>
+            <option value="Sonstiges">Sonstiges:</option>
+          </select>
+        </label>
+        <label>
+        <textarea class="col-12"
+                  rows="5"
+                  name="message"
+                  required></textarea>
+        </label>
+        <br>
+        <input type="submit"
+               value="Abschicken">
+      </fieldset>
+    </form>
+
+
+  </section>
+
+</main>

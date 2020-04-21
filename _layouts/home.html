@@ -1,51 +1,31 @@
 ---
 layout: default
-amp-carousel: true
-amp-accordion: true
-amp-instagram: true
-amp-social-share: true
-amp-form: true
 ---
 
 <div class="center">
 
   <!-- Start Fullpage Hero -->
   <figure class="ampstart-image-fullpage-hero m0 relative mb4">
-    <amp-img width="404" height="720" alt="Wann startest du, deine eigenen Träume wahr werden zu lassen?" layout="responsive" src="{{ 'assets/img/Cup_Red.webp' | relative_url }}" media="(max-width: 415px)"></amp-img>
-    <amp-img height="720" alt="Wann startest du, deine eigenen Träume wahr werden zu lassen?" layout="fixed-height" src="{{ 'assets/img/Cup_Red.webp' | relative_url }}" media="(min-width: 416px)"></amp-img>
+    <amp-img width="712" height="727" alt="Logo" layout="responsive" src="{{ 'assets/img/Logo.png' | relative_url }}" media="(max-width: 415px)"></amp-img>
+    <amp-img height="727" alt="Logo" layout="fixed-height" src="{{ 'assets/img/Logo.png' | relative_url }}" media="(min-width: 416px)"></amp-img>
     <figcaption class="absolute top-0 right-0 bottom-0 left-0 m-auto home-caption">
       <header class="p3">
         <h1 class="ampstart-fullpage-hero-heading mb3">
           <span class="ampstart-fullpage-hero-heading-text">
-            Wann startest du, deine eigenen
-                        <br>
-            Träume wahr werden zu lassen?
-                        <br>
-            Lass' dich mitreißen von Hunderten anderen motivierten Menschen in der FiNANZCAFÉ Community, die ihre finanziellen Ziele erreichen.
+            Wissenschaft trifft Finanzen
             <br>
-            Für mehr finanzielle Freiheit,
-            <br>
-            mehr Erfolg - mit Leidenschaft!
-            <br>
-            Werde jetzt Teil unserer Community und nimm an unseren kostenlosen Veranstaltungen teil.
+            Dein individueller Fahrplan in die
+            finanzielle Freiheit. / Mit Standards
+            in die finanzielle Freiheit
           </span>
         </h1>
 
         <div class="flex justify-center">
-          <a target="_blank" href="https://www.facebook.com/pg/finumfinanzcafe/events/?ref=page_internal">
-          <button class="cta-button facebook-button">
-            <svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#facebook' | relative_url }}"></use></svg>
-          </button>
-          </a>
-          </button>
-          <a target="_blank" href="https://www.eventbrite.de/o/finanzcafe-20225011947" >
-          <button class="cta-button meetup-button">
-            <svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#meetup' | relative_url }}"></use></svg>
-          </button>
-          </a>
-          <a target="_blank" href="https://www.meetup.com/de-DE/Finanzcafe">
-          <button class="cta-button eventbrite-button">
-            <svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#eventbrite' | relative_url }}"></use></svg>
+          <a  href="{{ '/contact' | prepend: site.baseurl }}">
+          <button class="cta-button">
+            (Jetzt) DEINEN (kostenlosen)
+            <br>
+            Termin vereinbaren
           </button>
           </a>
         </div>
@@ -59,203 +39,4 @@ amp-form: true
   <section class="post-content m3 justify">
     {{ content }}
   </section>
-
-  <!-- Start Image without Caption -->
-  <div class="banner-container m-auto">
-    <figure class="ampstart-image-fullpage-hero m0 mb4 banner-background absolute left-0">
-      <amp-img height="300" alt="Wann startest du, deine eigenen Träume wahr werden zu lassen?" layout="fixed-height"
-               src="{{ 'assets/img/Cup_Red.webp' | relative_url }}" media="(max-width: 415px)"></amp-img>
-      <amp-img height="500" alt="Wann startest du, deine eigenen Träume wahr werden zu lassen?" layout="fixed-height"
-               src="{{ 'assets/img/Cup_Red.webp' | relative_url }}" media="(min-width: 416px)"></amp-img>
-    </figure>
-
-    <amp-script class="max-width-100 max-height-100vw" width="700" height="500" script="quote-script">
-      <div class="ampstart-article-summary height-100 flex flex-column justify-center">
-        <header class="center m3 p3">
-          <h2 class="h2 my1">Geld nennt man heute Knete, weil man jeden damit weich bekommt.</h2>
-          <h3 class="caps bold">Gerhard Uhlenbruck</h3>
-        </header>
-      </div>
-    </amp-script>
-  </div>
-  <!-- End Image without Caption -->
-
-
-  <section>
-    <div class="flex flex-column justify-center m3">
-      <amp-img src="{{ 'assets/img/FINANZCAFÉ_logo_rough_schwarz.png' | relative_url }}" width="295" height="100"
-               class="m-auto"></amp-img>
-      <h2 class="mx-auto my4 h2 line-height-2">Nächste Webinare</h2>
-    </div>
-
-    <div class="m3 flex flex-wrap">
-      {% for post in site.events %}
-      <div class="width-200px ml-auto mr-auto mb1 mt1">
-
-        {% if post.thumbnail %}
-        <amp-img src="{{ post.thumbnail | relative_url }}" width="200"
-                 height="200"></amp-img>
-        {% endif %}
-        <div class="center">
-            <amp-date-countdown
-              end-date="{{ post.date | date: '%Y-%m-%dT18:30:00+01:00' }}"
-              layout="fixed-height"
-              height="50"
-            >
-              <template type="amp-mustache">
-                <p>
-                  {% raw %} {{dd}}Tage {{hh}}h {{mm}}min {% endraw %}
-                </p>
-              </template>
-            </amp-date-countdown>
-          <div class="flex justify-center">
-            {% if post.facebook %}
-            <a target="_blank" href="{{ post.facebook }}">
-              <button class="cta-button facebook-button">
-                <svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#facebook' | relative_url }}"></use></svg>
-              </button>
-            </a>
-            {% endif %}
-            </button>
-            {% if post.meetup %}
-            <a target="_blank" href="{{ post.meetup }}" >
-              <button class="cta-button meetup-button">
-                <svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#meetup' | relative_url }}"></use></svg>
-              </button>
-            </a>
-            {% endif %}
-            {% if post.eventbrite %}
-            <a target="_blank" href="{{ post.eventbrite }}">
-              <button class="cta-button eventbrite-button">
-                <svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#eventbrite' | relative_url }}"></use></svg>
-              </button>
-            </a>
-            {% endif %}
-          </div>
-          {{ post.excerpt }}
-        </div>
-      </div>
-      {% endfor %}
-      </div>
-
-
-    </div>
-
-
-    <!-- Start Image without Caption -->
-    <div class="banner-container m-auto">
-      <figure class="ampstart-image-fullpage-hero m0 mb4 banner-background absolute left-0">
-        <amp-img height="300" alt="Wann startest du, deine eigenen Träume wahr werden zu lassen?" layout="fixed-height"
-                 src="{{ 'assets/img/Cup_Red.webp' | relative_url }}" media="(max-width: 415px)"></amp-img>
-        <amp-img height="500" alt="Wann startest du, deine eigenen Träume wahr werden zu lassen?" layout="fixed-height"
-                 src="{{ 'assets/img/Cup_Red.webp' | relative_url }}" media="(min-width: 416px)"></amp-img>
-      </figure>
-
-      <amp-script class="max-width-100 max-height-100vw" width="700" height="500" script="quote-script">
-        <div class="ampstart-article-summary height-100 flex flex-column justify-center">
-          <header class="center m3 p3">
-            <h2 class="h2 my1">Geld nennt man heute Knete, weil man jeden damit weich bekommt.</h2>
-            <h3 class="caps bold">Gerhard Uhlenbruck</h3>
-          </header>
-        </div>
-      </amp-script>
-    </div>
-    <!-- End Image without Caption -->
-
-  <script id="quote-script" type="text/plain" target="amp-script">
-    function getRandomInt(min, max) {
-      min = Math.ceil(min);
-      max = Math.floor(max);
-      return Math.floor(Math.random() * (max - min)) + min;
-    }
-
-    var quotes= [
-  {
-    "text": "Geld nennt man heute Knete, weil man jeden damit weich bekommt.",
-    "author": "Gerhard Uhlenbruck"
-  },
-  {
-    "text": "Als ich klein war, glaubte ich, Geld sei das wichtigste im Leben. Heute, da ich alt bin, weiß ich: Es stimmt.",
-    "author": "Oscar Wilde"
-  },
-  {
-    "text": "Keine Festung ist so stark, dass Geld sie nicht einnehmen kann.",
-    "author": "Marcus Tullius Cicero"
-  },
-  {
-    "text": "Schaffe, schaffe Häusle baue.",
-    "author": "Jeder Schwabe"
-  },
-  {
-    "text": "Wozu ist Geld gut, wenn nicht, um die Welt zu verbessern?",
-    "author": "Elizabeth Taylor"
-  },
-  {
-    "text": "Ich habe eine Menge Geld für Alkohol, Frauen und schnelle Autos ausgegeben. Den Rest habe ich einfach verprasst.",
-    "author": "George Best"
-  },
-  {
-    "text": "Ich bin reich gewesen und ich bin arm gewesen: Reich ist besser.",
-    "author": "Sophie Tucker"
-  },
-  {
-    "text": "Wir haben eigentlich unser Budget nicht überschritten. Die Budgetierung war einfach tiefer als unsere Ausgaben.",
-    "author": "Keith Davis"
-  },
-  {
-    "text": "Meine Formel für den Erfolg ist früh aufstehen, bis spät zu arbeiten und auf Öl stossen.",
-    "author": "J.P. Getty"
-  },
-  {
-    "text": "Politiker sind nicht an Weisungen gebunden, höchstens an Überweisungen.",
-    "author": "Graf Fito"
-  },
-  {
-    "text": "Wie kommt es, dass am Ende des Geldes noch so viel Monat übrig ist?",
-    "author": "Jeder Student"
-  },
-  {
-    "text": "Wer gut wirtschaften will, sollte nur die Hälfte seiner Einnahmen ausgeben. Wenn er reich werden will, sogar nur ein Drittel.",
-    "author": "Sir Francis Bacon"
-  },
-  {
-    "text": "Wir kaufen Dinge, die wir nicht brauchen, von Geld, das wir nicht haben, um Menschen zu beeindrucken, die wir nicht mögen.",
-    "author": "Tyler Durden"
-  },
-  {
-    "text": "Man muss das Geld zum Fenster rauswerfen, damit es zur Haustüre wieder reinkommen kann.",
-    "author": "Karl Lagerfeld"
-  },
-  {
-    "text": "Reich wirst Du nicht durch das, was Du verdienst, sondern durch das, was Du nicht ausgibst.",
-    "author": "Henry Ford"
-  }
-]
-
-    var index = getRandomInt(0, quotes.length)
-    var h2s = document.getElementsByTagName("h2");
-    var h3s = document.getElementsByTagName("h3");
-
-    for (var i = 0; i < h2s.length; h++){
-      h2s[i].textContent = quotes[index].text;
-      h3s[i].textContent = quotes[index].author;
-    }
-
-  </script>
-
-  <section class="land-see-story-instagram-container my4 mx-auto center land-see-stories land-see-instagram">
-    <div class="land-see-story-instagrams mb2">
-      <ul class="list-reset flex justify-center overflow-hidden mt0 p0 relative">
-        <li class="land-see-instagram-post flex-auto mx1">
-          <amp-instagram data-shortcode="B8wXVr4KO92" height="350px" width="350px" layout="responsive">
-          </amp-instagram>
-        </li>
-        <li class="land-see-instagram-post flex-auto mx1 xs-hide">
-          <amp-instagram data-shortcode="B8tIigxK7jG" height="350px" width="350px" layout="responsive">
-          </amp-instagram>
-        </li>
-      </ul>
-    </div>
-  </section>
-
 </main>

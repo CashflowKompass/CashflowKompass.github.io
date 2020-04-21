@@ -153,6 +153,8 @@ button, select {
 }
 
 .cta-button {
+  background: #a6a6a6;
+  padding: 1em;
   line-height: 16px;
   margin: 5px;
 }
@@ -563,6 +565,9 @@ canvas {
 
 .m3 {
   margin: 1.5rem
+}
+.nm3 {
+  margin: -1.5rem
 }
 
 .mt3 {
@@ -2091,7 +2096,7 @@ search {
 }
 
 .ampstart-headerbar-title {
-  font: normal 1.25rem/1.6 EB Garamond, times, serif
+  font: normal 1.25rem/1.6 $font-family--primary
 }
 
 .ampstart-navbar-trigger {
@@ -2137,7 +2142,8 @@ search {
 }
 
 .ampstart-image-fullpage-hero {
-  margin-bottom: 0
+  margin-bottom: 0;
+  background-color: #343434;
 }
 
 .ampstart-image-fullpage-hero footer {

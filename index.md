@@ -1,33 +1,114 @@
 ---
 layout: home
-amp-accordion: true
-amp-instagram: true
-amp-social-share: true
-amp-mustache: true
-amp-date-countdown: true
-amp-script: true
-script-hash: sha384-vsvlHv--r-CZ8x4d2YaqULo8VzqkhF8_XZojgIWOogqwjFBKp3f2pnk-sElJeE8U
+amp-youtube: true
 title: FiNANZCAFÉ
 ---
 
-## Was erwartet dich?
+<amp-youtube data-videoid="ysO5Sz_lTso" layout="responsive" width="480" height="270" >
+</amp-youtube>
 
-👉 Wir sprechen auf Augenhöhe über Finanzthemen
+## „Arbeite nicht nur für dein Geld – Lass dein Geld für dich arbeiten!“
 
-👉 Kein um den heißen Brei reden
+Viele Menschen haben mittlerweile verstanden, dass ein finanziell sorgenfreies Leben
+bis ins hohe Alter keine Selbstverständlichkeit ist. Deshalb benötigt man dafür einen
+Masterplan, der DICH dabei unterstützt deine individuellen Träume und Wünsche
+umzusetzen. Getreu unserem Motto „Wissenschaft trifft Finanzen“ - erstellen wir
+gemeinsam mit dir deinen kostenfreien Finanzfahrplan nach der deutschen Finanznorm
+(DIN 77230), um deine finanzielle Freiheit zu erreichen.
 
-👉 Unterstützung in allen finanziellen Fragen
+Aufgrund der hohen Nachfrage, können wir den Finanzfahrplan nur noch für kurze Zeit
+**kostenlos** anbieten. Sichere dir noch heute deinen kostenfreien Finanzfahrplan.
 
-👉 Aktuell noch freier Eintritt
+<div class="flex justify-center">
+  <a target="_blank" href="{{ '/contact' | prepend: site.baseurl }}">
+      <button class="cta-button">
+        (Jetzt) DEINEN (kostenlosen)
+        <br>
+        Termin vereinbaren
+      </button>
+  </a>
+</div>
+
+<figure class="nm3 mb4 mt4">
+  <amp-img width="1311" height="660" alt="Wann startest du, deine eigenen Träume wahr werden zu lassen?" layout="responsive"
+           src="{{ 'assets/img/Vorteile.png' | relative_url }}"></amp-img>
+</figure>
+
+## Der kostenfreie Finanzfahrplan ist etwas für dich wenn...
+- DU keine Lust mehr auf undurchsichtige Verträge hast.
+- DU ambitionierte Ziele für deine Zukunft hast.
+- DU alles aus einer Hand haben möchtest.
+- DU dich nicht mehr mit einem Vertragschaos rumärgern möchtest.
+- DU ein finanziell sorgenfreies Leben führen möchtest
+- DU gerne mehr über Rendite
+
+## Wie arbeiten wir?
+Wir erarbeiten mit dir zusammen deine derzeitige finanzielle Situation, in dem wir,
+basierend auf einem wissenschaftlichen Konzept, deine derzeitige IST Situation
+analytisch darstellen.
+
+Mit Hilfe dieser Analyse können wir dir eine maßgeschneiderte Lösung für deine
+finanzielle Unabhängigkeit erstellen. 
+
+<figure class="nm3 mb4 mt4">
+  <amp-img width="1079" height="423" alt="Wann startest du, deine eigenen Träume wahr werden zu lassen?" layout="responsive"
+           src="{{ 'assets/img/Arbeiten.png' | relative_url }}"></amp-img>
+</figure>
 
 
-## Warum machen wir das?
+<div class="flex justify-center">
+  <a href="{{ '/contact' | prepend: site.baseurl }}">
+      <button class="cta-button">
+        Ja, ich möchte eine Analyse
+        <br>
+        meiner finanziellen Situation.
+      </button>
+  </a>
+</div>
 
-Money Money Money – Finanzen ist für die meisten noch immer ein Tabu-Thema. Das sollte sich aber schleunigst ändern!  Die meisten Menschen wollen sich nicht mehr mit dem Thema Finanzen auseinandersetzen.
-Entweder aus oftmals negativen Erfahrungen und einer daraus resultierenden Skepsis, Angst vor einer scheinbar hohen Komplexität oder schlicht aus mangelnder Begeisterung. Das ist schade. Doch vor allem ist das gefährlich.
 
-Denn jeder hat finanzielle Ziele und Träume. Sei es der Traum vom Eigenheim, schöne Urlaube, einen sorgenfreien Ruhestand oder sich gut abgesichert wissen. 
-Doch durch marode Sozialsysteme, Niedrigzinsen, einem finanziellen Analphabetismus und vielen gesetzlichen Regelungen ist es gar nicht so einfach, diese Ziele und Wünsche zu verwirklichen. Und schon gar nicht, wenn man sich der Thematik verweigert oder sich nicht damit beschäftigt. 
+## Das sind wir
+Wir das Team von Kapital Kompass, Dominik, Florian & Thomas stehen für
+- Kommen aus untschiedlichen Finanzvertrieben
+- Beratung von der Stange
+- Kundenmehrwert nicht im Vordergrund
+- Keine ganzheitliche, vollumfängliche und objektive Beratung
 
-Genau hier wollen wir mit unseren außergewöhnlichen Veranstaltungen dir helfen. Wir legen Wert auf Kommunikation auf Augenhöhe und gegenseitigen Austausch in einer schnell wachsenden Community. Wer sonst kümmert sich um die finanzielle Bildung in Deutschland? Keiner! Nur du selbst. 
+PR Story (jeder 2-3 Sätze)
 
+## Referenzen von Kunden
+- Meet up verknüpfen
+- Selbst welche erstellen
+
+## Partner
+Weil der Kundennutzen, die objektive, professionelle Beratung sowie die
+Ganzheitlichkeit für uns an erster Stelle stehen, haben wir uns dazu entschieden, mit
+unserem Partner FiNUM.Finanzhaus zusammen zu arbeiten.
+FiNUM.Finanzhaus ist für seine unabhängige und allumfassende Beratung im Privat- und
+Firmenkundenbereich bekannt und wurde auch deshalb von FOCUS Money und Capital
+zum besten Finanzvertrieb Deutschlands ausgezeichnet.
+
+„Als unabhängige Makler und Vermittler stehen uns – und damit auch Ihnen –
+der gesamte Finanz- und Versicherungsmarkt mit all seinen verschiedenen
+Produkten offen.“ – Quelle: FiNUM.Finanzhaus
+
+
+<div class="flex">
+<div style="width: 50%">
+<figure>
+  <amp-img width="266" height="282" alt="Wann startest du, deine eigenen Träume wahr werden zu lassen?" layout="responsive"
+           src="{{ 'assets/img/TEST.jpg' | relative_url }}"></amp-img>
+</figure>
+</div>
+<div style="width: 50%">
+<figure>
+  <amp-img width="249" height="247" alt="Wann startest du, deine eigenen Träume wahr werden zu lassen?" layout="responsive"
+           src="{{ 'assets/img/Capital.png' | relative_url }}"></amp-img>
+</figure>
+</div>
+</div>
+
+<figure class="nm3 mb4 mt4">
+  <amp-img width="736" height="289" alt="Wann startest du, deine eigenen Träume wahr werden zu lassen?" layout="responsive"
+           src="{{ 'assets/img/Werte.png' | relative_url }}"></amp-img>
+</figure>
