@@ -4,8 +4,8 @@
   <div role="button" aria-label="open sidebar" on="tap:header-sidebar.toggle" tabindex="0" class="ampstart-navbar-trigger  pr2  ">☰
   </div>
   {% if site.logo %}
-  <a class="page-link my0 mx-auto" href="{{ site.baseurl }}/" itemprop="url">
-  <amp-img src="{{ site.logo | relative_url }}" width={{site.logo-width}} height="50" layout="fixed" alt="The Blog"></amp-img>
+  <a class="page-link my0 mx-auto width-100" href="{{ site.baseurl }}/" itemprop="url">
+  <amp-img src="{{ site.logo | relative_url }}" height="3.5rem" layout="fixed-height" alt="{{ site.title }}"></amp-img>
   </a>
   {% else %}
   <a class="page-link ampstart-headerbar-title mx-auto h3" href="{{ site.baseurl }}/" itemprop="url">
@@ -34,3 +34,26 @@
 </amp-sidebar>
 <!-- End Sidebar -->
 <!-- End Navbar -->
+
+
+<amp-consent id="myUserConsent"
+             layout="nodisplay"
+             class="p1"
+>
+  <script type="application/json">
+    {
+      "consentInstanceId": "consent-id",
+      "consentRequired": true,
+      "promptUI": "consentDialog",
+      "postPromptUI": "post-consent-ui"
+    }
+  </script>
+  <div class="popupOverlay"
+       id="consentDialog">
+    <div class="consentPopup">
+      <span>Mit der Nutzung dieser Website erklären Sie sich damit einverstanden, dass wir Cookies verwenden.
+        <a href="{{ '/datenschutz' | prepend: site.baseurl }}">Mehr Informationen</a></span>
+      <button style="float: right" on="tap:myUserConsent.accept">Verstanden</button>
+    </div>
+  </div>
+</amp-consent>
