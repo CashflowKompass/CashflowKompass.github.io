@@ -1,6 +1,7 @@
 $font-family--primary: 'Poppins', sans-serif;
 $line-height-3: 2.0625rem;
 $line-height-5: 3.5rem;
+$ampstart-headerbar-height: 5rem;
 $main-max-width: 1200px;
 
 /*! Bassplate | MIT License | http://github.com/basscss/bassplate */
@@ -169,6 +170,15 @@ button, select {
 
   &:hover, &:focus {
     background-color: #000;
+  }
+}
+
+.white-button {
+  background-color: #fff;
+  color: #000;
+
+  &:hover, &:focus {
+    background-color: #fff;
   }
 }
 
@@ -1936,14 +1946,43 @@ amp-carousel .ampstart-image-with-caption {
 }
 
 .ampstart-headerbar {
+  height: $ampstart-headerbar-height;
   background-color: #000;
   color: #fff;
   z-index: 999;
-  box-shadow: 0 0 5px 2px rgba(0, 0, 0, .1)
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, .1);
+
+  .ampstart-sidebar-nav {
+    display: none;
+  }
+}
+#header-sidebar {
+.ampstart-sidebar-faq {
+  display: block;
+}
 }
 
+@media only screen and (min-width: 1070px) {
+  .ampstart-headerbar {
+    .ampstart-navbar-trigger {
+      display: none;
+    }
+    .ampstart-headerbar-title {
+      margin-left: 0;
+    }
+    .ampstart-sidebar-nav {
+      display: initial;
+    }
+
+    .ampstart-faq-item {
+      margin: 1rem;
+    }
+  }
+}
+
+
 .ampstart-headerbar + :not(amp-sidebar), .ampstart-headerbar + amp-sidebar + * {
-  margin-top: $line-height-5
+  margin-top: $ampstart-headerbar-height
 }
 
 .ampstart-headerbar-nav .ampstart-nav-item {
@@ -1953,7 +1992,7 @@ amp-carousel .ampstart-image-with-caption {
 }
 
 .ampstart-headerbar-nav {
-  line-height: $line-height-5
+  line-height: $ampstart-headerbar-height
 }
 
 .ampstart-nav-item:active, .ampstart-nav-item:focus, .ampstart-nav-item:hover {
@@ -1974,7 +2013,7 @@ amp-carousel .ampstart-image-with-caption {
 }
 
 .ampstart-navbar-trigger {
-  line-height: $line-height-5;
+  line-height: $ampstart-headerbar-height;
   font-size: 1.25rem
 }
 
@@ -2033,8 +2072,8 @@ search {
 }
 
 .ampstart-sidebar-header {
-  line-height: $line-height-5;
-  min-height: $line-height-5
+  line-height: $ampstart-headerbar-height;
+  min-height: $ampstart-headerbar-height
 }
 
 .ampstart-sidebar .ampstart-dropdown-item, .ampstart-sidebar .ampstart-dropdown header, .ampstart-sidebar .ampstart-faq-item, .ampstart-sidebar .ampstart-nav-item, .ampstart-sidebar .ampstart-social-follow {
