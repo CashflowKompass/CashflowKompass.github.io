@@ -1422,6 +1422,20 @@ main {
       max-width: 1200px;
       margin: auto;
     }
+
+    &.with-figure {
+      background: #000000d9;
+      position: relative;
+      overflow: hidden;
+
+      figure{
+        background: #000;
+        bottom: 0;
+        top: 0;
+        height: 100%;
+      }
+
+    }
   }
 }
 
