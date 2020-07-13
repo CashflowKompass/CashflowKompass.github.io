@@ -4,11 +4,12 @@
   <div role="button" aria-label="open sidebar" on="tap:header-sidebar.toggle" tabindex="0" class="ampstart-navbar-trigger  pr2  ">☰
   </div>
   {% if site.logo %}
-  <a class="page-link my0 mx-auto width-100" href="{{ site.baseurl }}/" itemprop="url">
-  <amp-img src="{{ site.logo | relative_url }}" height="3.5rem" layout="fixed-height" alt="{{ site.title }}"></amp-img>
+  <a class="page-link ampstart-headerbar-title mx-auto" href="{{ site.baseurl }}/" itemprop="url">
+  <amp-img src="{{ site.logo | relative_url }}" height="7rem" layout="fixed-height" alt="{{ site.title }}"
+  class="amp-img"></amp-img>
   </a>
   {% else %}
-  <a class="page-link ampstart-headerbar-title mx-auto h3" href="{{ site.baseurl }}/" itemprop="url">
+  <a class="page-link ampstart-headerbar-title mx-auto" href="{{ site.baseurl }}/" itemprop="url">
   {{ site.title }}
   </a>
   {% endif %}
@@ -25,7 +26,7 @@
       {% endif %}
       {% endfor %}
       <a href="{{ '/' | prepend: site.baseurl }}">
-        <button class="cta-button white-button">Erstgespräch buchen</button>
+        <button class="cta-button">Erstgespräch buchen</button>
       </a>
     </ul>
   </nav>
@@ -50,7 +51,7 @@
                                        itemprop="url"><span itemprop="name">{{ my_page.title }}</span></a></li>
       {% endif %}
       {% endfor %}
-      <a href="{{ '/' | prepend: site.baseurl }}">
+      <a href="https://dominiktischer.typeform.com/to/y22MzM5E">
         <button class="cta-button white-button">Erstgespräch buchen</button>
       </a>
     </ul>

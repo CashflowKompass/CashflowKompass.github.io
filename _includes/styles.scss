@@ -1,7 +1,7 @@
 $font-family--primary: 'Poppins', sans-serif;
 $line-height-3: 2.0625rem;
 $line-height-5: 3.5rem;
-$ampstart-headerbar-height: 5rem;
+$ampstart-headerbar-height: 10rem;
 $main-max-width: 1200px;
 
 /*! Bassplate | MIT License | http://github.com/basscss/bassplate */
@@ -656,6 +656,30 @@ canvas {
 
 .mx4 {
   margin-right: 2rem
+}
+
+.m5 {
+  margin: 2.5rem
+}
+
+.mt5 {
+  margin-top: 2.5rem
+}
+
+.mr5 {
+  margin-right: 2.5rem
+}
+
+.mb5 {
+  margin-bottom: 2.5rem
+}
+
+.ml5, .mx5 {
+  margin-left: 2.5rem
+}
+
+.mx5 {
+  margin-right: 2.5rem
 }
 
 .my4 {
@@ -1407,10 +1431,6 @@ main {
   max-width: $main-max-width;
   margin: 0 auto;
 
-  p {
-    max-width: $main-max-width / 2;
-  }
-
   .full-width {
     background: #000;
     color: #fff;
@@ -1961,8 +1981,8 @@ amp-carousel .ampstart-image-with-caption {
 
 .ampstart-headerbar {
   height: $ampstart-headerbar-height;
-  background-color: #000;
-  color: #fff;
+  background-color: #fff;
+  color: #000;
   z-index: 999;
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, .1);
 
@@ -2190,6 +2210,7 @@ search {
 .ampstart-headerbar-title {
   font: normal 1.25rem/1.6 $font-family--primary;
   text-decoration: none;
+  min-width: $ampstart-headerbar-height;
 }
 
 .ampstart-navbar-trigger {
@@ -2217,11 +2238,14 @@ search {
 }
 
 .ampstart-article-summary header, .ampstart-image-fullpage-hero figcaption {
-  background: #ffffffbd;
+  background: #0000007a;
+  color: #fff;
 }
 
 .home.ampstart-image-fullpage-hero {
-  margin: $line-height-5 0 0;
+  margin-top: $ampstart-headerbar-height;
+  margin-left: 0;
+  margin-right: 0;
 }
 .home {
   font-weight: 700;
@@ -2242,8 +2266,7 @@ search {
 }
 
 .ampstart-image-fullpage-hero {
-  margin-bottom: 0;
-  background-color: #c7e0da;
+  background-color: #000
 }
 
 .ampstart-image-fullpage-hero footer {
