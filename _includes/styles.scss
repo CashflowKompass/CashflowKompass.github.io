@@ -2257,12 +2257,15 @@ search {
 }
 .home {
   font-weight: 700;
-  height: calc(350px + 20vmin);
+  height: calc(500px + 20vmin);
    header {
-    font-size: calc(1vmin + 1rem);
+    max-width: $main-max-width;
+     margin: auto;
+    font-size: calc(1.25vmin + 1.25rem);
     line-height: 1.5em;
     h1 {
       font-size: 1.5em;
+      line-height: 1.5em;
     }
   }
 }
