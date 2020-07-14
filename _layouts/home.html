@@ -24,21 +24,15 @@ layout: default
     </figcaption>
   </figure>
   <!-- End Fullpage Hero -->
-
-  <div class="flex justify-center">
-    <a href="https://dominiktischer.typeform.com/to/y22MzM5E">
-      <button class="cta-button">
-        <h3>Jetzt Termin vereinbaren</h3>
-        <p>Sprich unverbindlich mit einem unserer Experten</p>
-      </button>
-    </a>
-  </div>
 </div>
 
 <main id="content" role="main">
-  <section class="post-content m5">
+  <section class="post-content m3 mb5 mt5">
+    {%- include cta-button.html -%}
+
     {{ content }}
-    <div class="full-width p3 m5">
+
+    <div class="full-width p3 mb5 mt5">
       <div class="center">
         <h2 id="die-4-schritte-unseres-coachings">Die 4 Schritte unseres Coachings</h2>
       </div>
@@ -86,6 +80,9 @@ layout: default
     </div>
 
 
+    {%- include cta-button.html -%}
+
+
     <figure class="nm3 mb5 mt5">
       <amp-img width="1400" height="720" alt="Quotes" layout="responsive"
                src="{{ 'assets/img/CashflowKompass/Quotes.png' | relative_url }}"></amp-img>
@@ -93,13 +90,13 @@ layout: default
 
 
     <!-- Start Image without Caption -->
-    <div class="full-width with-figure m5">
+    <div class="full-width with-figure mb5 mt5">
       <figure class="ampstart-image-fullpage-hero m0 mb5 banner-background absolute left-0 center">
         <amp-img src="{{ 'assets/img/cashflow-kompass.svg' | relative_url }}" width="750" height="700" layout="intrinsic" class="m-auto"></amp-img>
       </figure>
 
       <div >
-      <div class="m5">
+      <div class="mb5 mt5">
       <div class="center">
         <h2 id="anforderungen-unsere-kunden" class="mt3 mb3">Anforderungen unsere Kunden</h2>
         <h4 class="mt3 mb5">Damit mein Team und ich Dir helfen können, musst du die folgenden Voraussetzungen erfüllen:</h4>
@@ -144,6 +141,8 @@ layout: default
         Termin kannst du aussuchen)
       </div>
     </div>
+
+    {%- include cta-button.html -%}
 
 
     <figure class="nm3 mb5 mt5">

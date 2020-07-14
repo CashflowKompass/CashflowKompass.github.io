@@ -159,10 +159,15 @@ button, select {
 
 .cta-button {
   padding: 1em;
-  line-height: 1rem;
-  font-size: 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5em;
   margin: 5px;
   background: #000;
+
+  h3 {
+    font-size: 1.5em;
+    line-height: inherit;
+  }
 
   p {
     font-weight: 400;
@@ -2370,10 +2375,6 @@ search {
     height: 300px;
   }
 
-  .post-content{
-    margin-right: 1rem;
-    margin-left: 1rem;
-  }
   .full-width div{
     margin-right: 0;
     margin-left: 0;
