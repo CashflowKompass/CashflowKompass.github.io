@@ -2336,7 +2336,15 @@ search {
   display: inline-block;
   fill: currentColor;
   vertical-align: text-bottom;
+
 }
+  .icon-with-border {
+    display: inline-flex;
+    border-radius: 100%;
+    color: white;
+    border: 15px solid;
+    box-shadow: 0 2px 5px 0 #00000052;
+  }
 
 
 .land-see-instagram-post {
