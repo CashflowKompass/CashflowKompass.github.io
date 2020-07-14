@@ -14,22 +14,7 @@
   </a>
   {% endif %}
 
-  <nav class="ampstart-sidebar-nav ampstart-nav">
-    <ul class="ampstart-sidebar-faq list-reset m0 flex">
-      <li class="ampstart-faq-item"><a class="page-link" href="{{ '/#unsere-mission' | prepend: site.baseurl }}" itemprop="url"><span itemprop="name">Unsere Mission</span></a></li>
-      <li class="ampstart-faq-item"><a class="page-link" href="{{ '/#die-4-schritte-unseres-coachings' | prepend: site.baseurl }}" itemprop="url"><span itemprop="name">Ablauf</span></a></li>
-      <li class="ampstart-faq-item"><a class="page-link" href="{{ '/#Kundenbewertungen' | prepend: site.baseurl }}" itemprop="url"><span itemprop="name">Kundenbewertungen</span></a></li>
-      <li class="ampstart-faq-item"><a class="page-link" href="{{ '/#anforderungen-unsere-kunden' | prepend: site.baseurl }}" itemprop="url"><span itemprop="name">Über uns</span></a></li>
-      {% for my_page in site.pages %}
-      {% if my_page.title and my_page.header %}
-      <li class="ampstart-faq-item"><a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}" itemprop="url"><span itemprop="name">{{ my_page.title }}</span></a></li>
-      {% endif %}
-      {% endfor %}
-      <a href="{{ '/' | prepend: site.baseurl }}">
-        <button class="cta-button">Erstgespräch buchen</button>
-      </a>
-    </ul>
-  </nav>
+  {%- include nav-list.html -%}
 
 
 </header>
@@ -39,23 +24,7 @@
   <div class="flex justify-start items-center ampstart-sidebar-header">
     <div role="button" aria-label="close sidebar" on="tap:header-sidebar.toggle" tabindex="0" class="ampstart-navbar-trigger items-start">✕</div>
   </div>
-  <nav class="ampstart-sidebar-nav ampstart-nav">
-    <ul class="ampstart-sidebar-faq list-reset m0 flex">
-      <li class="ampstart-faq-item"><a class="page-link" href="{{ '/#unsere-mission' | prepend: site.baseurl }}" itemprop="url"><span itemprop="name">Unsere Mission</span></a></li>
-      <li class="ampstart-faq-item"><a class="page-link" href="{{ '/#die-4-schritte-unseres-coachings' | prepend: site.baseurl }}" itemprop="url"><span itemprop="name">Ablauf</span></a></li>
-      <li class="ampstart-faq-item"><a class="page-link" href="{{ '/#Kundenbewertungen' | prepend: site.baseurl }}" itemprop="url"><span itemprop="name">Kundenbewertungen</span></a></li>
-      <li class="ampstart-faq-item"><a class="page-link" href="{{ '/#anforderungen-unsere-kunden' | prepend: site.baseurl }}" itemprop="url"><span itemprop="name">Über uns</span></a></li>
-      {% for my_page in site.pages %}
-      {% if my_page.title and my_page.header %}
-      <li class="ampstart-faq-item"><a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}"
-                                       itemprop="url"><span itemprop="name">{{ my_page.title }}</span></a></li>
-      {% endif %}
-      {% endfor %}
-      <a href="https://dominiktischer.typeform.com/to/y22MzM5E">
-        <button class="cta-button white-button">Erstgespräch buchen</button>
-      </a>
-    </ul>
-  </nav>
+  {%- include nav-list.html -%}
 
   {%- include social.html -%}
 </amp-sidebar>

@@ -173,15 +173,6 @@ button, select {
   }
 }
 
-.white-button {
-  background-color: #fff;
-  color: #000;
-
-  &:hover, &:focus {
-    background-color: #fff;
-  }
-}
-
 .facebook-button {
   background-color: #4267b2;
 
@@ -2001,6 +1992,15 @@ amp-carousel .ampstart-image-with-caption {
 #header-sidebar {
 .ampstart-sidebar-faq {
   display: block;
+
+  .cta-button {
+    background-color: #fff;
+    color: #000;
+
+    &:hover, &:focus {
+      background-color: #fff;
+    }
+  }
 }
 }
 
