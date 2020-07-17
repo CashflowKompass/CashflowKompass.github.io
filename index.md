@@ -1,5 +1,6 @@
 ---
 layout: home
+amp-iframe: true
 ---
 
 ## Unsere Mission

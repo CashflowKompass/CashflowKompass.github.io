@@ -38,6 +38,10 @@
   {% if page.amp-script %}
   <script async custom-element="amp-script" src="https://cdn.ampproject.org/v0/amp-script-0.1.js"></script>
   {% endif %}
+  {% if page.amp-iframe %}
+  <script async custom-element="amp-iframe"
+          src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+  {% endif %}
   {% if page.script-hash %}
   <meta name="amp-script-src" content="{{page.script-hash}}"/>
   {% endif %}

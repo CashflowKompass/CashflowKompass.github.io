@@ -467,16 +467,21 @@ canvas {
 .height-100 {
   height: 100%
 }
+
+.flex div.width-2 {
+  width: 25rem;
+}
+
+.min-width-1 {
+  min-width: 17rem
+}
+
 .max-height-100vw {
   max-height: 100vw
 }
 
 .max-width-1 {
   max-width: 24rem
-}
-
-.min-width-1 {
-  min-width: 17rem
 }
 
 .max-width-2 {
