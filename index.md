@@ -1,6 +1,7 @@
 ---
 layout: home
 amp-iframe: true
+title: Cashflow Kompass
 ---
 
 ## Unsere Mission
