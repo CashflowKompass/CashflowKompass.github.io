@@ -1445,7 +1445,7 @@ main {
 
     >div {
       width: 90vw;
-      max-width: 1200px;
+      max-width: $main-max-width;
       margin: auto;
     }
 
@@ -1995,6 +1995,10 @@ amp-carousel .ampstart-image-with-caption {
   z-index: 999;
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, .1);
 
+  .cta-button {
+    margin-left: 2em;
+  }
+
   .ampstart-sidebar-nav {
     display: none;
   }
@@ -2004,6 +2008,7 @@ amp-carousel .ampstart-image-with-caption {
   display: block;
 
   .cta-button {
+    margin: 0;
     background-color: #fff;
     color: #000;
 
