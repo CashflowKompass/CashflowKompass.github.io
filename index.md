@@ -8,7 +8,7 @@ title: Cashflow Kompass
 
 Viele Menschen haben mittlerweile verstanden, dass ein finanziell sorgenfreies Leben bis
 ins hohe Alter keine Selbstverständlichkeit ist. 
-Deshalb ist es notwendig, sich frühzeitig mit
+     Deshalb ist es notwendig, sich frühzeitig mit
 seiner individuellen und aktuellen finanziellen Situation auseinander zu setzen. Das
 Problem hierbei ist, dass heutzutage unzählige Produkte als „die perfekte Lösung“
 angeboten werden. 
