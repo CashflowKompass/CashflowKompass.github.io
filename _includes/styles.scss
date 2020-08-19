@@ -466,6 +466,10 @@ canvas {
   width: 100%
 }
 
+.width-100vw {
+  width: 100vw;
+}
+
 .height-100 {
   height: 100%
 }
@@ -618,6 +622,10 @@ canvas {
 }
 .nm3 {
   margin: -1.5rem
+}
+
+.nm {
+  margin: -50vw;
 }
 
 .mt3 {
@@ -2029,7 +2037,7 @@ amp-carousel .ampstart-image-with-caption {
 }
 }
 
-@media only screen and (min-width: 1070px) {
+@media only screen and (min-width: 1135px) {
   .ampstart-headerbar {
     .ampstart-navbar-trigger {
       display: none;
