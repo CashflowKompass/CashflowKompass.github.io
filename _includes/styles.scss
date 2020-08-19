@@ -2378,9 +2378,9 @@ search {
 }
 
 .post-content {
-    margin: auto;
-    margin-top: 1.25em;
-    max-width: $post-content-max-width;
+  margin: 1.25em auto auto;
+  width: 90vw;
+  max-width: $post-content-max-width;
 }
 
 .ampstart-footer {
