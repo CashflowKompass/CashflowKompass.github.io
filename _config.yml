@@ -89,7 +89,7 @@ defaults:
 
 # Collections
 collections:
-  events:
+  feedbacks:
     output: true
 
 # Sass/SCSS

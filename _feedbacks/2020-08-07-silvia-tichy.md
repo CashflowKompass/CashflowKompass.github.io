@@ -1,0 +1,6 @@
+---
+layout: default
+---
+
+#### „Für uns immer zu 100% da”
+„Wir sind sehr zufrieden mit Herrn Hübner, der uns in Sachen Versicherung und Altersvorsorge sehr gut beraten hat. Was wir überragend fanden war das er sich unsere gesamten Unterlagen durchgesehen hat und uns somit zu vielen Ungewissheiten Fragen beantworten konnte! Wir haben einiges gekündigt und neues abgeschlossen um gut versichert zu sein! Er ist nicht aufdringlich und sehr kundenfreundlich! Wir werden bei Herrn Hübner bleiben und auch weiter empfehlen!”

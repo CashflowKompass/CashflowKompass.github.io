@@ -41,7 +41,7 @@ layout: default
     </div>
 
       <figure class="nm mt5 mb5">
-      <amp-img width="6000" height="4000" alt="Quotes" layout="responsive" class="m-auto width-100vw max-width-0"
+      <amp-img width="6000" height="4000" alt="Mission" layout="responsive" class="m-auto width-100vw max-width-0"
                src="{{ 'assets/img/CashflowKompass/Mission.jpg' | relative_url }}"></amp-img>
     </figure>
 
@@ -109,10 +109,22 @@ layout: default
           </a>
     </div>
 
-    <figure class="nm3 mt5 mb5">
-      <amp-img width="1400" height="720" alt="Quotes" layout="responsive"
-               src="{{ 'assets/img/CashflowKompass/Quotes.png' | relative_url }}"></amp-img>
-    </figure>
+    <h2 id="Kundenbewertungen" class="center">Das sagen unsere Kunden</h2>
+    <div class="flex flex-wrap center">
+      {% assign feedbacks = site.feedbacks | reverse %}
+      {% for post in feedbacks limit:3 %}
+      <div class="m1 mt3 mb3 grow min-width-0">
+        {% if post.title %}
+        <h3>{{ post.title}}</h3>
+        {% endif %}
+        <amp-img width="193" height="32" alt="Stars by {{ post.title}}" layout="intrinsic"
+                 src="{{ 'assets/img/CashflowKompass/whofinance_stars_5.png' | relative_url }}"
+                 style="max-width: 120px;"
+        ></amp-img>
+        {{ post.excerpt }}
+      </div>
+      {% endfor %}
+    </div>
 
 
     <!-- Start Image without Caption -->
@@ -165,7 +177,7 @@ layout: default
         <h3>Schritt 2</h3>
         Wir werden uns Deine Bewerbung genau ansehen und anhand deiner Angaben entscheiden, ob du für das Konzept geeignet bist.
       </div>
-      <div class="m1 mt3 mb3 grow min-width-0" id="Kundenbewertungen">
+      <div class="m1 mt3 mb3 grow min-width-0">
         <div class="icon-with-border m1">
         <amp-img src="{{ 'assets/img/CashflowKompass/how_to_reg-black-24dp.svg' | relative_url }}"
                  width="75" height="75"></amp-img>
