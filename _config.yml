@@ -22,10 +22,10 @@ static_email: "https://formspree.io/your-email@domain.com"
 # Analytics
 analytics:
   provider: true # false (default), "google", "google-universal", "custom"
-#  google:
-#    tracking_id: UA-asdf
-  facebookpixel:
-    tracking_id: 716482995548219
+  google:
+    tracking_id: UA-178230864-1
+#  facebookpixel:
+#    tracking_id: 716482995548219
 
 # Minima date format
 # refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
