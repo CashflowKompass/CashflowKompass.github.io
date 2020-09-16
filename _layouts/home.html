@@ -121,11 +121,19 @@ layout: default
                  src="{{ 'assets/img/CashflowKompass/whofinance_stars_5.png' | relative_url }}"
                  style="max-width: 120px;"
         ></amp-img>
+        {% if post.link %}
+          {{ post.excerpt | truncate: 230 }}
+          <a href="{{ post.link}}" target="_blank">mehr lesen</a>
+        {% else %}
         {{ post.excerpt }}
+        {% endif %}
       </div>
+
+
+
+
       {% endfor %}
     </div>
-
 
     <!-- Start Image without Caption -->
     <div class="full-width with-figure mt5 mb5">
