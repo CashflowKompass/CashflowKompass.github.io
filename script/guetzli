@@ -1,0 +1,7 @@
+#!/bin/sh
+DIR='./assets/img'
+for FILE in $(find $DIR -type f -not -path '*/\.*' | sort)
+do
+    echo guetzli $FILE "$FILE"_g
+    guetzli $FILE "$FILE"_g
+done
